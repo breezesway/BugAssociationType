@@ -1,7 +1,7 @@
 # BugAssociationType
 There are different types of the association between two bugs. We collected 16 types of bug associations from JIRA1. Supposing that bug α is in an association (e.g., **Blocked**) with bug β, the 16 types of bug associations are described as follows:
 
-+ **Blocked**: α Blocked β. Generally speaking, β appeared first, but β has not been repaired, and at this time, α related to it appeared. So if you want to solve α, you have to solve β first. bug HIVE-12872 says NoSuchMethodError exception Clause in Hive 1.1.1, and the cause of this issue is bug HIVE-11249, which says Issue in WHERE Clause in Hive1.1.1, so we have to fix HIVE-11249 before fixing HIVE -12872.
++ **Blocked**: α Blocked β. Generally speaking, β appeared first, but β has not been repaired, and at this time, α related to it appeared. So if you want to solve α, you have to solve β first. For instance, bug [*HIVE-12872*](https://issues.apache.org/jira/browse/HIVE-12872) says NoSuchMethodError exception Clause in Hive 1.1.1, and the cause of this issue is bug [*HIVE-11249*](https://issues.apache.org/jira/browse/HIVE-11249), which says Issue in WHERE Clause in Hive1.1.1, so we have to fix [*HIVE-11249*](https://issues.apache.org/jira/browse/HIVE-11249) before fixing [*HIVE-12872*](https://issues.apache.org/jira/browse/HIVE-12872).
 
 + **Blocker**: α Blocker β. It is the opposite type to Blocked, i.e. we have to solve α first and then β. bug HIVE-22433 means Hive JDBC Storage Handler: Incorrect results fetched from BOOLEAN and TIMESTAMP DataType From JDBC Data Source, bug HIVE-22392 means Hive JDBC Storage Handler: Support For Writing Data to JDBC Data Source, if you want to add HIVE-22392 this new feature, the HIVE-22433 bug must be fixed first.
 
