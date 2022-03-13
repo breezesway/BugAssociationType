@@ -1,4 +1,4 @@
-# BugAssociationType
+# Bug Association Types
 There are different types of the association between two bugs. We collected 16 types of bug associations from JIRA1. Supposing that bug α is in an association (e.g., **Blocked**) with bug β, the 16 types of bug associations are described as follows:
 
 + **Blocked**: α Blocked β. Generally speaking, β appeared first, but β has not been repaired, and at this time, α related to it appeared. So if you want to solve α, you have to solve β first. For instance, bug [*HIVE-12872*](https://issues.apache.org/jira/browse/HIVE-12872) says NoSuchMethodError exception Clause in Hive 1.1.1, and the cause of this issue is bug [*HIVE-11249*](https://issues.apache.org/jira/browse/HIVE-11249), which says Issue in WHERE Clause in Hive1.1.1, so we have to fix [*HIVE-11249*](https://issues.apache.org/jira/browse/HIVE-11249) before fixing [*HIVE-12872*](https://issues.apache.org/jira/browse/HIVE-12872).
